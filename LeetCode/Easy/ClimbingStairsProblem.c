@@ -12,3 +12,28 @@ an other even number
             2+2+2
 so , basically we are trying to decompose that number into a sequance of one and twwos 
 */
+int climbStairs(int n) {
+    int res = 0 ; 
+    int temp = n ; 
+    if (n % 2 == 0 ){
+        while (temp != 0){
+            temp = temp /2 ; 
+            res += 1 ;
+            
+        }
+    }else {
+        res = 1 ; 
+         while (temp != 0){
+            printf(" tmp 0 : %d \n",temp);
+             temp = temp /2 ;
+             printf(" tmp 1 : %d\n ",temp);
+
+            res += 1 ;
+             
+        }
+    }
+    return res; 
+}
+void main (){
+    climbStairs(1);
+}
